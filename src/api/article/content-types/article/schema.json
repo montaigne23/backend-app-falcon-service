@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Prix": {
+      "type": "decimal",
+      "default": 1,
+      "required": true
+    },
+    "Taxe": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "Categorie": {
+      "type": "string",
+      "required": true
+    },
+    "Reference": {
+      "type": "string",
+      "required": true
+    },
+    "Societe": {
+      "type": "string",
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
